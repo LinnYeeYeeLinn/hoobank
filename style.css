@@ -1,0 +1,37 @@
+*{
+    transition: all .4s ease-in-out;
+}
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 60px;
+}
+
+nav a:hover, .navbar a.active{
+    color: #00F6FF;
+}
+@media screen and (max-width: 768px) {
+    .navbar{
+        position: fixed;
+        top: 15%;
+        right: 0%;
+        width: 200px;
+        background-color: #222;
+        padding: 1rem;
+        border-radius: 10px;
+        transform: translateX(100%);
+    }
+    .navbar a{
+        display: block;
+        color: white;
+        padding: .5rem 1rem;
+    }
+    .toggleNav{
+        right: 2%;
+        transform: translateX(0%);
+    }
+    .hide{
+        transform: translateX(100%);
+        right: 0%;
+    }
+    
+}

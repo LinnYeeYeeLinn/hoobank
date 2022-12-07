@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HooBank</title>
+
+    <!-- fontawesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+    <!-- custom css link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-black text-white">
+    
+    <!-- header -->
+    <header class="bg-black w-full flex justify-between items-center px-3 md:px-5 lg:px-24 py-5 fixed top-0 z-50">
+        <a href="#home" class="">
+            <img src="./images/logo.svg" width="100" alt="">
+        </a>
+        <nav class="navbar">
+            <a href="#home" class="lg:px-3 text-slate-400" id="navbar-link" onclick="openLink('Home')">Home</a>
+            <a href="#features" class="lg:px-3 text-slate-400" id="navbar-link" onclick="openLink('Features')">Features</a>
+            <a href="#product" class="lg:px-3 text-slate-400" id="navbar-link" onclick="openLink('Product')">Product</a>
+            <a href="#clients" class=" text-slate-400" id="navbar-link" onclick="openLink('Clients')">Clients</a>
+        </nav>
+        <div class="cursor-pointer md:hidden block openMenu">
+            <img src="./images/menu.svg" alt="">
+        </div>
+    </header>
+
+    <!-- home or hero section -->
+    <section id="home" class="mt-10">
+        <div class="px-3 md:px-5 lg:px-24 py-12">
+            <div class="grid md:grid-cols-2 grid-cols-1">
+                <div class="md:pt-10 pt-0">
+                    <p class="py-1 px-3 bg-gray-900 text-sm w-max rounded-sm"><span class=" mr-3 font-bold">%</span class="font-bold">20%<span class="text-slate-400"> Discount For</span><span class="font-bold"> 1 Month</span><span class="text-slate-400"> Account</span></p>
+                    <h1 class="lg:text-6xl text-4xl font-bold my-4">The Next <br class="lg:block hidden"> <span>Generation <br class="lg:block hidden"></span>Payment Method</h1>
+                    <p class="lg:w-96 w-auto text-slate-400">
+                        Our team of experts uses a methodology to identify the credit cards most likely to fit your needs. We examine annual percentage rates, annual fees.
+                    </p>
+                </div>
+                <div class="hidden md:block">
+                    <img src="./images/robot.png" class="w-full" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- stats section -->
+    <section>
+        <div class="px-3 md:px-5 lg:px-24 py-5 md:py-12">
+            <div class="flex flex-wrap justify-around items-center">
+                <p class="flex items-center">
+                    <span class="font-bold md:text-3xl text-2xl">3800+</span>
+                    <span class="text-sm text-slate-400"> USER ACTIVE</span>
+                </p>
+                <p class="flex items-center my-3 md:my-0">
+                    <span class="font-bold md:text-3xl text-2xl">230+</span>
+                    <span class="text-sm text-slate-400"> TRUSTED BY CAMPANY</span>
+                </p>
+                <p class="flex items-center">
+                    <span class="font-bold md:text-3xl text-2xl">$230M+</span>
+                    <span class="text-sm text-slate-400"> TRANSACTION</span>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- features section -->
+    <section id="features">
+        <div class="px-3 md:px-5 lg:px-24 py-5 md:py-12">
+            <div class="grid grid-cols-1 md:grid-cols-2">
+                <div class="pb-8 md:pb-0">
+                    <h1 class="lg:text-4xl text-3xl font-bold">
+                        You do the business, <br class=""> we'll handle the money.
+                    </h1>
+                    <p class="lg:w-96 w-auto my-7 text-slate-400">
+                        With the right credit card, you can improve your financial life by building credit, earning rewards and saving money. But with hundreds of credit cards on the market.
+                    </p>
+                    <a href="#" class="bg-cyan-500 py-2 px-5 rounded-lg w-max">Get Started</a>
+                </div>
+                <div>
+                    <div class="flex items-center p-3 hover:bg-gray-900 hover:rounded-md">
+                        <div class="md:mr-10 mr-3 bg-gray-900 rounded-full p-2 flex items-center justify-center">
+                            <img src="./images/Star.svg" alt="">
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-lg">Rewards</h4>
+                            <p class="text-sm text-slate-400">The best credit cards offer some tantallizing combinations of promotions and prizes</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center p-3 my-2 hover:bg-gray-900 hover:rounded-md">
+                        <div class="md:mr-10 mr-3 bg-gray-900 rounded-full p-2 flex items-center justify-center">
+                            <img src="./images/Shield.svg" alt="">
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-lg">100% Secured</h4>
+                            <p class="text-sm text-slate-400">The best credit cards offer some tantallizing combinations of promotions and prizes</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center p-3 hover:bg-gray-900 hover:rounded-md">
+                        <div class="md:mr-10 mr-3 bg-gray-900 rounded-full p-2 flex items-center justify-center">
+                            <img src="./images/Send.svg" alt="">
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-lg">Balance Transfer</h4>
+                            <p class="text-sm text-slate-400">The best credit cards offer some tantallizing combinations of promotions and prizes</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- product or billing section -->
+    <section id="product">
+        <div class="px-3 md:px-5 lg:px-24 py-5 md:py-12">
+            <div class="grid grid-cols-1 md:grid-cols-2">
+                <div class="flex lg:justify-start justify-center md:mb-0 mb-5">
+                    <img src="./images/bill.png" class="lg:w-4/5 w-full" alt="">
+                </div>
+                <div class="md:pt-10 pt-0">
+                    <h1 class="lg:text-4xl text-3xl font-bold">
+                        Easily control your <br class="lg:block hidden"> billing & invoicing.
+                    </h1>
+                    <p class="lg:w-3/5 w-auto my-7 text-slate-400">
+                        Elit enim sed massa etiam. Mauris eu adipising ultrices ametodio aenean neque. Fusce ipsum orci rhoncus aliporttitor integer platea placerat.
+                    </p>
+                    <div class="flex flex-wrap">
+                        <a href=""><img src="./images/apple.svg" class="mr-1" alt=""></a>
+                        <a href=""><img src="./images/google.svg" class="" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- card deal section -->
+    <section>
+        <div class="px-3 md:px-10 lg:px-24 py-5 md:py-12">
+            <div class="grid grid-cols-1 md:grid-cols-2">
+                <div class="md:pt-10 pt-0 md:mb-0 mb-5">
+                    <h1 class="lg:text-4xl text-3xl font-bold">
+                        Find a better card deal <br class="lg:block hidden"> in few easy steps.
+                    </h1>
+                    <p class="lg:w-2/3 w-auto my-7 text-slate-400">
+                        Arcu tortor, purus in mattis at sed integer faucibus. Aliquet quis aliquet eget mauris tortor. Aliquet ultrices ac, ametau.
+                    </p>
+                    <a href="#" class="bg-cyan-500 py-2 px-5 rounded-lg w-max">Get Started</a>
+                </div>
+                <div class="flex lg:justify-start justify-center ">
+                    <img src="./images/card.png" class="lg:w-4/5 w-full" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- clients or testimonials section -->
+    <section id="clients">
+        <div class="px-3 md:px-10 lg:px-24 py-5 md:py-12">
+            <div class="grid md:grid-cols-2 grid-cols-1 items-center">
+                <h1 class="lg:text-4xl text-3xl font-bold">
+                    What people are <br class="lg:block hidden">saying about us
+                </h1>
+                <p class="lg:w-96 w-auto text-slate-400">
+                    Everything you need to accept card payments and grow your business anywhere on the planet.
+                </p>
+            </div>
+            <div class="grid lg:grid-cols-3 grid-cols-1 mt-14 md:gap-0 gap-8">
+                <div class="drop-shadow-lg flex flex-col">
+                    <img src="./images/quotes.svg" class="w-8 mb-5" alt="">
+                    <p class="lg:w-64 w-auto mb-5">Money is only a tool. It will take you wherever you wish, but it will not replace you as the driver.</p>
+                    <div class="flex items-center mt-auto">
+                        <img src="./images/people01.png" class="rounded-full w-10 h-10 mr-3" alt="">
+                        <div>
+                            <h3 class="font-bold text-base">Herman Jensen</h3>
+                            <small class="text-slate-400">Founder & Leader</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="drop-shadow-lg flex flex-col">
+                    <img src="./images/quotes.svg" class="w-8 mb-5" alt="">
+                    <p class="lg:w-64 w-auto mb-5">Money makes your life easier. If you're lucky to have it, you're lucky.</p>
+                    <div class="flex items-center mt-auto">
+                        <img src="./images/people02.png" class="rounded-full w-10 h-10 mr-3" alt="">
+                        <div>
+                            <h3 class="font-bold text-base">Steve Mark</h3>
+                            <small class="text-slate-400">Founder & Leader</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="drop-shadow-lg flex flex-col">
+                    <img src="./images/quotes.svg" class="w-8 mb-5" alt="">
+                    <p class="lg:w-64 w-auto mb-5">It is usually people in the money business, finance, and international trade that are really nice.</p>
+                    <div class="flex items-center mt-auto">
+                        <img src="./images/people03.png" class="rounded-full w-10 h-10 mr-3" alt="">
+                        <div>
+                            <h3 class="font-bold text-base">Kenn Gallagher</h3>
+                            <small class="text-slate-400">Founder & Leader</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="px-3 md:px-10 lg:px-24 py-5 md:py-12">
+            <div class="grid grid-cols-2 md:grid-cols-4 items-center gap-3 md:gap-0">
+                <img src="./images/airbnb.png" class="lg:w-3/5 w-28" alt="">
+                <img src="./images/binance.png" class="lg:w-3/5 w-28" alt="">
+                <img src="./images/coinbase.png" class="lg:w-3/5 w-28" alt="">
+                <img src="./images/dropbox.png" class="lg:w-3/5 w-28" alt="">
+            </div>
+        </div>
+    </section>
+    
+    <!-- CTA section -->
+    <section>
+        <div class="px-3 md:px-10 lg:px-24 py-5 md:py-12">
+            <div class="bg-gray-900 md:p-8 p-5 rounded-xl flex items-center justify-between flex-wrap">
+                <div>
+                    <h1 class="lg:text-4xl text-3xl font-bold">
+                        Let's try our service now!
+                    </h1>
+                    <p class="lg:w-96 w-auto mt-4 text-slate-400">
+                        Everything you need to accept card payments and grow your business anywhere on the planet.
+                    </p>
+                </div>
+                <div class="mt-4 md:mt-0">
+                    <a href="#" class="bg-cyan-500 py-2 px-5 rounded-lg w-max">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="px-3 md:px-10 lg:px-24 py-5 md:pt-12 md:pb-5">
+            <div class="grid lg:grid-cols-4 md:grid-cols-2 lg:gap-0 gap-5">
+                <div>
+                    <img src="./images/logo.svg" class="w-44" alt="">
+                    <p class="lg:w-72 mt-4 w-auto text-slate-400">
+                        A new way to make the payments easy, reliable and secure.
+                    </p>
+                </div>
+                <div class="flex lg:justify-end">
+                    <div>
+                        <p class="font-bold text-base mb-2">Useful Links</p>
+                        <nav class="flex flex-col">
+                            <a href="#" class=" text-slate-400 mb-1">Content</a>
+                            <a href="#" class=" text-slate-400 mb-1">How it Works</a>
+                            <a href="#" class=" text-slate-400 mb-1">Create</a>
+                            <a href="#" class=" text-slate-400 mb-1">Explore</a>
+                            <a href="#" class=" text-slate-400 mb-1">Terms & Services</a>
+                        </nav>
+                    </div>
+                </div>
+                <div class="flex lg:justify-end">
+                    <div>
+                        <p class="font-bold text-base mb-2">Community</p>
+                        <nav class="flex flex-col">
+                            <a href="#" class=" text-slate-400 mb-1">Help Center</a>
+                            <a href="#" class=" text-slate-400 mb-1">Partners</a>
+                            <a href="#" class=" text-slate-400 mb-1">Suggestions</a>
+                            <a href="#" class=" text-slate-400 mb-1">Blog</a>
+                            <a href="#" class=" text-slate-400 mb-1">Newsletters</a>
+                        </nav>
+                    </div>
+                </div>
+                <div class="flex lg:justify-end">
+                    <div>
+                        <p class="font-bold text-base mb-2">Partner</p>
+                        <nav class="flex flex-col">
+                            <a href="#" class=" text-slate-400 mb-1">Our Partner</a>
+                            <a href="#" class=" text-slate-400 mb-1">Become a Partner</a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-slate-900 w-full my-5" style="height: 1px;"></div>
+            <div class="flex items-center justify-between flex-wrap">
+                <p class="text-slate-300">Copyright &copy; 2022 HooBank. All Rights Reserved.</p>
+                <div class="flex flex-row md:mt-0 mt-4">
+                    <a href=""><img src="./images/instagram.svg" class="md:ml-3 mr-3" alt=""></a>
+                    <a href=""><img src="./images/facebook.svg" class="md:ml-3 mr-3" alt=""></a>
+                    <a href=""><img src="./images/twitter.svg" class="md:ml-3 mr-3" alt=""></a>
+                    <a href=""><img src="./images/linkedin.svg" class="md:ml-3 mr-3" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- scroll up key -->
+    <a href="#home" class="w-10 h-10 bg-slate-900 cursor-pointer fixed bottom-3 right-3 rounded-full flex items-center justify-center opacity-0 upKey">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js"></script>
+</body>
+</html>
